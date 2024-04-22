@@ -2,437 +2,491 @@
 <html>
     <head>
         <title>NAVI Team - Команди</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-        <header>
-            <h1 align="center">Команди</h1>
-            <div>
-                <a href="index.html"><img height="30" width="30" src="media/back-arrow.png" alt="Повернутися назад"></a>
-            </div>
-        </header>
-
-        <div>
-            <table align="center">
-                <caption><strong>NAVI Counter Strike 2</strong></caption>
-                <tbody>
-                    <tr>
-                        <td align="center" colspan="7">Поточний склад</td>
-                    </tr>
-                    <tr align="center">
-                        <td><img height="260" src="media/teams/cs2_b1t.png" alt="b1t"></td>
-                        <td><img height="260" src="media/teams/cs2_Aleksib.png" alt="Aleksib"></td>
-                        <td><img height="260" src="media/teams/cs2_jL.png" alt="jL"></td>
-                        <td><img height="260" src="media/teams/cs2_iM.png" alt="«iM»"></td>
-                        <td><img height="260" src="media/teams/cs2_w0nderful.png" alt="«w0nderful»"></td>
-                        <td><img height="260" src="media/teams/cs2_B1ad3.png" alt="«B1ad3»"></td>
-                        <td><img height="260" src="media/teams/cs2_s1mple.png" alt="«s1mple»"></td>
-                    </tr>
-                    <tr align="center">
-                        <td>Валерій «b1t» Раховський</td>
-                        <td>Алексі «Aleksib» Віролайнен</td>
-                        <td>Юстінас «jL» Лекавічус</td>
-                        <td>Іван «iM» Міхай</td>
-                        <td>Ігор «w0nderful» Жданов</td>
-                        <td>Андрій «B1ad3» Городенський (тренер)</td>
-                        <td>Олександр «s1mple» Костилєв (інактив)</td>
-                    </tr>
-                </tbody>
-            </table> <br>
+        <div class="container">
+            <header>
+                <h1 align="center">Команди</h1>
                 <div align="center">
-                    <video controls width="270" height="340">
-                        <source src="media/w0nderful moments.mp4">
-                    </video>
-                    <video controls width="600">
-                        <source src="media/major_champions.mp4">
-                    </video> <br>
-                    <i>Матеріал взятий з офіційного Instagram акаунту та Телеграм каналу NAVI</i> 
+                    <a href="index.html" class="headerbutton">Головна сторінка</a>
+                    <a href="history.html" class="headerbutton">Історія організації</a>
+                    <a href="teams.html" class="headerbutton active">Команди</a>
+                    <a href="merch.html" class="headerbutton">Мерч</a>
+                </div> <br>
+            </header>
+            <div class="content">
+                <div id="leftblock"></div>
+                <div id="infoblock">
+                    <div>
+                        <div align="center">
+                            <h3 id="team">NAVI Counter Strike 2</h3>
+                        </div>
+                        <div class="image-gallery">
+                            <figure>
+                                <img src="media/teams/cs2_b1t.png" alt="«b1t»">
+                                <figcaption>Валерій «b1t» Раховський</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/teams/cs2_Aleksib.png" alt="«Aleksib»">
+                                <figcaption>Алексі «Aleksib» Віролайнен</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/teams/cs2_jL.png" alt="«jL»">
+                                <figcaption>Юстінас «jL» Лекавічус</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/teams/cs2_iM.png" alt="«iM»">
+                                <figcaption>Іван «iM» Міхай</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/teams/cs2_w0nderful.png" alt="«w0nderful»">
+                                <figcaption>Ігор «w0nderful» Жданов</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/teams/cs2_s1mple.png" alt="«s1mple»">
+                                <figcaption>Олександр «s1mple» Костилєв (інактив)</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="media/teams/cs2_B1ad3.png" alt="«B1ad3»">
+                                <figcaption>Андрій «B1ad3» Городенський (тренер)</figcaption>
+                            </figure>
+                        </div>
+                        <div align="center">
+                            <video controls width="20%" height="340">
+                                <source src="media/w0nderful moments.mp4">
+                            </video>
+                            <video controls width="55%" height="340">
+                                <source src="media/major_champions.mp4">
+                            </video> <br>
+                            <i>Матеріал взятий з офіційного Instagram акаунту та Телеграм каналу NAVI</i> 
+                        </div>
+                        <div>
+                            <h4>Досягення (1-5 місця) за останні 2 роки</h4>
+                            <ol>
+                                <li>
+                                    2024
+                                    <ul>
+                                        <li>
+                                            1-ші місця:
+                                            <ul>
+                                                <li>PGL Major Copenhagen 2024 <strong>(Перші чемпіони світу з CS2)</strong></li>
+                                                <li>BLAST Premier: Spring Groups 2024 (Group C)</li>
+                                                <li>PGL Major Copenhagen 2024: European Qualifier A</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            2-гі місця:
+                                            <ul>
+                                                <li>-</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            3-5-ті місця:
+                                            <ul>
+                                                <li>PGL Major Copenhagen 2024: European RMR A</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    2023
+                                    <ul>
+                                        <li>
+                                            1-ші місця:
+                                            <ul>
+                                                <li>BLAST.tv Paris Major 2023: European RMR A</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            2-гі місця:
+                                            <ul>
+                                                <li>ESL Pro League Season 18</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            3-5-ті місця:
+                                            <ul>
+                                                <li>BLAST Premier: World Final 2023</li>
+                                                <li>Intel Extreme Masters Rio 2023</li>
+                                                <li>ESL Pro League Season 17</li>
+                                                <li>Intel Extreme Masters Katowice 2023</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <div align="center">
+                                <h3 id="team">NAVI JAVELINS - CS2 Female</h3>
+                            </div>
+                            <div class="image-gallery">
+                                <figure>
+                                    <img src="media/teams/cs2Javelins_vicu.png" alt="«vicu»">
+                                    <figcaption>Вікторія «vicu» Яницька</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/cs2Javelins_Hanka.png" alt="«Hanka»">
+                                    <figcaption>Ханья «Hanka» Жданову Пудліс</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/cs2Javelins_Liina.png" alt="«Liina»">
+                                    <figcaption>Кароліна «Liina» Каспшик</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/cs2Javelins_Angelka.png" alt="«Angelka»">
+                                    <figcaption>Анжеліка «Angelka» Козловська</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/cs2Javelins_LETi.png" alt="«LETi»">
+                                    <figcaption>Мартина «LETi» Овсік</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/cs2Javelins_AlcesT.png" alt="«AlcesT»">
+                                    <figcaption>Адріан «AlcesT» Чизяк (тренер)</figcaption>
+                                </figure>
+                            </div>   
+                        </div>    
+                        <div>
+                            <h4>Досягення (1-5 місця) за останні 2 роки</h4>
+                            <ol>
+                                <li>
+                                    2024
+                                    <ul>
+                                        <li>
+                                            1-ші місця:
+                                            <ul>
+                                                <li>Tradeit League FE Masters #1</li>
+                                                <li>ESL Impact Cash Cup: Europe - Winter 2024 #3</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            2-гі місця:
+                                            <ul>
+                                                <li>-</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            3-5-ті місця:
+                                            <ul>
+                                                <li>-</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    2023
+                                    <ul>
+                                        <li>
+                                            1-ші місця:
+                                            <ul>
+                                                <li>ESL Impact League Season 4: European Division (Group B)</li>
+                                                <li>ESL Impact Cash Cup: Europe - Summer 2023 #5</li>
+                                                <li>ESL Impact Cash Cup: Europe - Summer 2023 #3</li>
+                                                <li>Gamers Without Borders Female 2023</li>
+                                                <li>ESL Impact Cash Cup: Europe - Spring 2023 #2</li>
+                                                <li>ESL Impact League Season 3: European Division (Group B)</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            2-гі місця:
+                                            <ul>
+                                                <li>ESL Impact League Season 4</li>
+                                                <li>ESL Impact League Season 3</li>
+                                                <li>ESL Impact Katowice 2023</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            3-5-ті місця:
+                                            <ul>
+                                                <li>-</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div align="center">
+                                <h3 id="team">NAVI DOTA2</h3>
+                            </div>
+                            <div class="image-gallery">
+                                <figure>
+                                    <img src="media/teams/dota2_Nefrit.png" alt="«Nefrit»">
+                                    <figcaption>Дмитро «Nefrit» Тарасич</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/dota2_W_Zayac.png" alt="«W_Zayac»">
+                                    <figcaption>Бакіт «W_Zayac» Емілжанов</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/dota2_Malady.png" alt="«Malady»">
+                                    <figcaption>Арман «Malady» Оразбаєв</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/dota2_Yuragi.png" alt="«Yuragi»">
+                                    <figcaption>Артем «Yuragi» Голубєв</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/dota2_sanctity-.png" alt="«sanctity-»">
+                                    <figcaption>Сухбат «sanctity-» Отгондаваа</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/dota2_Sword_Art.png" alt="«Sword_Art»">
+                                    <figcaption>Віталій «Sword_Art» Петкін (тренер)</figcaption>
+                                </figure>
+                            </div>   
+                        </div>  
+                        <div> 
+                            <h4>Досягення (1-5 місця) за останні 2 роки</h4>
+                            <ol>
+                                <li>
+                                    2024
+                                    <ul>
+                                        <li>
+                                            1-ші місця:
+                                            <ul>
+                                                <li>DreamLeague Season 23: Eastern Europe Closed Qualifier</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            2-гі місця:
+                                            <ul>
+                                                <li>-</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            3-5-ті місця:
+                                            <ul>
+                                                <li>PGL Wallachia Season 1: Eastern Europe Closed Qualifier</li>
+                                                <li>DreamLeague Season 22: Eastern Europe Closed Qualifier</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    2023
+                                    <ul>
+                                        <li>
+                                            1-ші місця:
+                                            <ul>
+                                                <li>DPC EEU 2023 Tour 3: Division II</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            2-гі місця:
+                                            <ul>
+                                                <li>Pinnacle Cup: Malta Vibes #1</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            3-5-ті місця:
+                                            <ul>
+                                                <li>The International 2023 - Eastern Europe Qualifier</li>
+                                                <li>Pinnacle Cup: Malta Vibes #3 (Group A)</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <div align="center">
+                                <h3 id="team">NAVI PUBG</h3>
+                            </div>
+                            <div class="image-gallery">
+                                <figure>
+                                    <img src="media/teams/pubg_Feyerist.png" alt="«Feyerist»">
+                                    <figcaption>Антон «Feyerist» Дутчак</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/pubg_Hakatory.png" alt="«Hakatory»">
+                                    <figcaption>Віталій «Hakatory» Шайда</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/pubg_SoseD.png" alt="«SoseD»">
+                                    <figcaption>Сергій «SoseD» Зубков</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/pubg_DIFX.png" alt="«DIFX»">
+                                    <figcaption>Владислав «DIFX» Невихожий</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/pubg_ALREIN.png" alt="«ALREIN»">
+                                    <figcaption>Вадим «ALREIN» Льовін (тренер)</figcaption>
+                                </figure>
+                            </div>   
+                        </div>
+                        <div>
+                            <h4>Досягення (1-5 місця) за останні 2 роки</h4>
+                            <ol>
+                                <li>
+                                    2024
+                                    <ul>
+                                        <li>
+                                            1-ші місця:
+                                            <ul>
+                                                <li>-</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            2-гі місця:
+                                            <ul>
+                                                <li>Protality: Season 8</li>
+                                                <li>New Year's Bash Cup 2024</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            3-5-ті місця:
+                                            <ul>
+                                                <li>-</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    2023
+                                    <ul>
+                                        <li>
+                                            1-ші місця:
+                                            <ul>
+                                                <li>Atlantic Showdown</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            2-гі місця:
+                                            <ul>
+                                                <li>-</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            3-5-ті місця:
+                                            <ul>
+                                                <li>PUBG EMEA Championship: Fall Playoffs</li>
+                                                <li>PUBG EMEA Championship: Spring Playoffs</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div align="center">
+                                <h3 id="team">NAVI VALORANT</h3>
+                            </div>
+                            <div class="image-gallery">
+                                <figure>
+                                    <img src="media/teams/valorant_ANGE1.png" alt="«ANGE1»">
+                                    <figcaption>Кирило «ANGE1» Карасьов</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/valorant_Shao.png" alt="«Shao»">
+                                    <figcaption>Андрій «Shao» Кіприський</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/valorant_Zyppan.png" alt="«Zyppan»">
+                                    <figcaption>Понтус «Zyppan» Ік</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/valorant_suygetsu.png" alt="«suygetsu»">
+                                    <figcaption>Дмитро «suygetsu» Ілюшин</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/valorant_ardiis.png" alt="«ardiis»">
+                                    <figcaption>Ардіс «ardiis» Сваренієкс</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/valorant_Erik.png" alt="«Erik»">
+                                    <figcaption>Ерік «Erik» Сандгрен (тренер)</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="media/teams/valorant_LATEKS.png" alt="«LATEKS»">
+                                    <figcaption>Олівер «LATEKS» Фахландер (другий тренер)</figcaption>
+                                </figure>
+                            </div>   
+                        </div>
+                        <div>
+                            <h4>Досягення (1-5 місця) за останні 2 роки</h4>
+                            <ol>
+                                <li>
+                                    2024
+                                    <ul>
+                                        <li>
+                                            1-ші місця:
+                                            <ul>
+                                                <li>-</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            2-гі місця:
+                                            <ul>
+                                                <li>-</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            3-5-ті місця:
+                                            <ul>
+                                                <li>VCT 2024: EMEA Kickoff </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    2023
+                                    <ul>
+                                        <li>
+                                            1-ші місця:
+                                            <ul>
+                                                <li>Riot Games ONE PRO INVITATIONAL 2023</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            2-гі місця:
+                                            <ul>
+                                                <li>VCT 2023: EMEA Last Chance Qualifier</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            3-5-ті місця:
+                                            <ul>
+                                                <li>VCT 2023: EMEA League</li>
+                                                <li>VCT 2023: LOCK//IN São Paulo</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
                 </div>
-            <h4>Досягення (1-5 місця) за останні 2 роки</h4>
-            <ol>
-                <li>
-                    2024
-                    <ul>
-                        <li>
-                            1-ші місця:
-                            <ul>
-                                <li>PGL Major Copenhagen 2024</li>
-                                <li>BLAST Premier: Spring Groups 2024 (Group C)</li>
-                                <li>PGL Major Copenhagen 2024: European Qualifier A</li>
-                            </ul>
-                        </li>
-                        <li>
-                            2-гі місця:
-                            <ul>
-                                <li>-</li>
-                            </ul>
-                        </li>
-                        <li>
-                            3-5-ті місця:
-                            <ul>
-                                <li>PGL Major Copenhagen 2024: European RMR A</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    2023
-                    <ul>
-                        <li>
-                            1-ші місця:
-                            <ul>
-                                <li>BLAST.tv Paris Major 2023: European RMR A</li>
-                            </ul>
-                        </li>
-                        <li>
-                            2-гі місця:
-                            <ul>
-                                <li>ESL Pro League Season 18</li>
-                            </ul>
-                        </li>
-                        <li>
-                            3-5-ті місця:
-                            <ul>
-                                <li>BLAST Premier: World Final 2023</li>
-                                <li>Intel Extreme Masters Rio 2023</li>
-                                <li>ESL Pro League Season 17</li>
-                                <li>Intel Extreme Masters Katowice 2023</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
-
-        <div>
-            <table align="center">
-                <caption><strong>NAVI JAVELINS - CS2 Female</strong></caption>
-                <tbody>
-                    <tr>
-                        <td align="center" colspan="6">Поточний склад</td>
-                    </tr>
-                    <tr align="center">
-                        <td><img height="260" src="media/teams/cs2Javelins_vicu.png" alt="«vicu»"></td>
-                        <td><img height="260" src="media/teams/cs2Javelins_Hanka.png" alt="«Hanka»"></td>
-                        <td><img height="260" src="media/teams/cs2Javelins_Liina.png" alt="«Liina»"></td>
-                        <td><img height="260" src="media/teams/cs2Javelins_Angelka.png" alt="«Angelka»"></td>
-                        <td><img height="260" src="media/teams/cs2Javelins_LETi.png" alt="«LETi»"></td>
-                        <td><img height="260" src="media/teams/cs2Javelins_AlcesT.png" alt="«AlcesT»"></td>
-                    </tr>
-                    <tr align="center">
-                        <td>Вікторія «vicu» Яницька</td>
-                        <td>Ханья «Hanka» Пудліс</td>
-                        <td>Кароліна «Liina» Каспшик</td>
-                        <td>Анжеліка «Angelka» Козловська</td>
-                        <td>Мартина «LETi» Овсік</td>
-                        <td>Адріан «AlcesT» Чизяк (тренер)</td>
-                    </tr>
-                </tbody>
-            </table>        
-            <h4>Досягення (1-5 місця) за останні 2 роки</h4>
-            <ol>
-                <li>
-                    2024
-                    <ul>
-                        <li>
-                            1-ші місця:
-                            <ul>
-                                <li>Tradeit League FE Masters #1</li>
-                                <li>ESL Impact Cash Cup: Europe - Winter 2024 #3</li>
-                            </ul>
-                        </li>
-                        <li>
-                            2-гі місця:
-                            <ul>
-                                <li>-</li>
-                            </ul>
-                        </li>
-                        <li>
-                            3-5-ті місця:
-                            <ul>
-                                <li>-</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    2023
-                    <ul>
-                        <li>
-                            1-ші місця:
-                            <ul>
-                                <li>ESL Impact League Season 4: European Division (Group B)</li>
-                                <li>ESL Impact Cash Cup: Europe - Summer 2023 #5</li>
-                                <li>ESL Impact Cash Cup: Europe - Summer 2023 #3</li>
-                                <li>Gamers Without Borders Female 2023</li>
-                                <li>ESL Impact Cash Cup: Europe - Spring 2023 #2</li>
-                                <li>ESL Impact League Season 3: European Division (Group B)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            2-гі місця:
-                            <ul>
-                                <li>ESL Impact League Season 4</li>
-                                <li>ESL Impact League Season 3</li>
-                                <li>ESL Impact Katowice 2023</li>
-                            </ul>
-                        </li>
-                        <li>
-                            3-5-ті місця:
-                            <ul>
-                                <li>-</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
-
-        <div>
-            <table align="center">
-                <caption><strong>NAVI Dota2</strong></caption>
-                <tbody>
-                    <tr>
-                        <td align="center" colspan="6">Поточний склад</td>
-                    </tr>
-                    <tr align="center">
-                        <td><img height="260" src="media/teams/dota2_Nefrit.png" alt="«Nefrit»"></td>
-                        <td><img height="260" src="media/teams/dota2_W_Zayac.png" alt="«W_Zayac»"></td>
-                        <td><img height="260" src="media/teams/dota2_Malady.png" alt="«Malady»"></td>
-                        <td><img height="260" src="media/teams/dota2_Yuragi.png" alt="«Yuragi»"></td>
-                        <td><img height="260" src="media/teams/dota2_sanctity-.png" alt="«sanctity-»"></td>
-                        <td><img height="260" src="media/teams/dota2_Sword_Art.png" alt="«Sword_Art»"></td>
-                    </tr>
-                    <tr align="center">
-                        <td>Дмитро «Nefrit» Тарасич</td>
-                        <td>Бакіт «W_Zayac» Емілжанов</td>
-                        <td>Арман «Malady» Оразбаєв</td>
-                        <td>Артем «Yuragi» Голубєв</td>
-                        <td>Сухбат «sanctity-» Отгондаваа</td>
-                        <td>Віталій «Sword_Art» Петкін <br> (тренер)</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h4>Досягення (1-5 місця) за останні 2 роки</h4>
-            <ol>
-                <li>
-                    2024
-                    <ul>
-                        <li>
-                            1-ші місця:
-                            <ul>
-                                <li>DreamLeague Season 23: Eastern Europe Closed Qualifier</li>
-                            </ul>
-                        </li>
-                        <li>
-                            2-гі місця:
-                            <ul>
-                                <li>-</li>
-                            </ul>
-                        </li>
-                        <li>
-                            3-5-ті місця:
-                            <ul>
-                                <li>PGL Wallachia Season 1: Eastern Europe Closed Qualifier</li>
-                                <li>DreamLeague Season 22: Eastern Europe Closed Qualifier</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    2023
-                    <ul>
-                        <li>
-                            1-ші місця:
-                            <ul>
-                                <li>DPC EEU 2023 Tour 3: Division II</li>
-                            </ul>
-                        </li>
-                        <li>
-                            2-гі місця:
-                            <ul>
-                                <li>Pinnacle Cup: Malta Vibes #1</li>
-                            </ul>
-                        </li>
-                        <li>
-                            3-5-ті місця:
-                            <ul>
-                                <li>The International 2023 - Eastern Europe Qualifier</li>
-                                <li>Pinnacle Cup: Malta Vibes #3 (Group A)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
-
-        <div>
-            <table align="center">
-                <caption><strong>NAVI PUBG</strong></caption>
-                <tbody>
-                    <tr>
-                        <td align="center" colspan="6">Поточний склад</td>
-                    </tr>
-                    <tr align="center">
-                        <td><img height="260" src="media/teams/pubg_Feyerist.png" alt="«Feyerist»"></td>
-                        <td><img height="260" src="media/teams/pubg_Hakatory.png" alt="«Hakatory»"></td>
-                        <td><img height="260" src="media/teams/pubg_SoseD.png" alt="«SoseD»"></td>
-                        <td><img height="260" src="media/teams/pubg_DIFX.png" alt="«DIFX»"></td>
-                        <td><img height="260" src="media/teams/pubg_ALREIN.png" alt="«ALREIN»"></td>
-                    </tr>
-                    <tr align="center">
-                        <td>Антон «Feyerist» Дутчак</td>
-                        <td>Віталій «Hakatory» Шайда</td>
-                        <td>Сергій «SoseD» Зубков</td>
-                        <td>Владислав «DIFX» Невихожий</td>
-                        <td>Вадим «ALREIN» Льовін <br> (тренер)</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h4>Досягення (1-5 місця) за останні 2 роки</h4>
-            <ol>
-                <li>
-                    2024
-                    <ul>
-                        <li>
-                            1-ші місця:
-                            <ul>
-                                <li>-</li>
-                            </ul>
-                        </li>
-                        <li>
-                            2-гі місця:
-                            <ul>
-                                <li>Protality: Season 8</li>
-                                <li>New Year's Bash Cup 2024</li>
-                            </ul>
-                        </li>
-                        <li>
-                            3-5-ті місця:
-                            <ul>
-                                <li>-</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    2023
-                    <ul>
-                        <li>
-                            1-ші місця:
-                            <ul>
-                                <li>Atlantic Showdown</li>
-                            </ul>
-                        </li>
-                        <li>
-                            2-гі місця:
-                            <ul>
-                                <li>-</li>
-                            </ul>
-                        </li>
-                        <li>
-                            3-5-ті місця:
-                            <ul>
-                                <li>PUBG EMEA Championship: Fall Playoffs</li>
-                                <li>PUBG EMEA Championship: Spring Playoffs</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ol>
-        </div>
-            
-        <div>
-            <table align="center">
-                <caption><strong>NAVI Dota2</strong></caption>
-                <tbody>
-                    <tr>
-                        <td align="center" colspan="7">Поточний склад</td>
-                    </tr>
-                    <tr align="center">
-                        <td><img height="260" src="media/teams/valorant_ANGE1.png" alt="«ANGE1»"></td>
-                        <td><img height="260" src="media/teams/valorant_Shao.png" alt="«Shao»"></td>
-                        <td><img height="260" src="media/teams/valorant_Zyppan.png" alt="«Zyppan»"></td>
-                        <td><img height="260" src="media/teams/valorant_suygetsu.png" alt="«suygetsu»"></td>
-                        <td><img height="260" src="media/teams/valorant_ardiis.png" alt="«ardiis»"></td>
-                        <td><img height="260" src="media/teams/valorant_Erik.png" alt="«Erik»"></td>
-                        <td><img height="260" src="media/teams/valorant_LATEKS.png" alt="«LATEKS»"></td>
-                    </tr>
-                    <tr align="center">
-                        <td>Кирило «ANGE1» Карасьов</td>
-                        <td>Андрій «Shao» Кіприський</td>
-                        <td>Понтус «Zyppan» Ік</td>
-                        <td>Дмитро «suygetsu» Ілюшин</td>
-                        <td>Ардіс «ardiis» Сваренієкс</td>
-                        <td>Ерік «Erik» Сандгрен (тренер)</td>
-                        <td>Олівер «LATEKS» Фахландер (другий тренер)</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h4>Досягення (1-5 місця) за останні 2 роки</h4>
-            <ol>
-                <li>
-                    2024
-                    <ul>
-                        <li>
-                            1-ші місця:
-                            <ul>
-                                <li>-</li>
-                            </ul>
-                        </li>
-                        <li>
-                            2-гі місця:
-                            <ul>
-                                <li>-</li>
-                            </ul>
-                        </li>
-                        <li>
-                            3-5-ті місця:
-                            <ul>
-                                <li>VCT 2024: EMEA Kickoff </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    2023
-                    <ul>
-                        <li>
-                            1-ші місця:
-                            <ul>
-                                <li>Riot Games ONE PRO INVITATIONAL 2023</li>
-                            </ul>
-                        </li>
-                        <li>
-                            2-гі місця:
-                            <ul>
-                                <li>VCT 2023: EMEA Last Chance Qualifier</li>
-                            </ul>
-                        </li>
-                        <li>
-                            3-5-ті місця:
-                            <ul>
-                                <li>VCT 2023: EMEA League</li>
-                                <li>VCT 2023: LOCK//IN São Paulo</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ol>
-        </div> <br>
-
-        <footer align="center">
-            <div>
-                <a href="https://www.instagram.com/natus_vincere_official" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/instagram.png" alt="Інстаграм"></a>
-                <a href="https://t.me/natus_vincere_official" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/telegram.png" alt="Телеграм"></a>
-                <a href="https://twitter.com/natusvincere" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/twitter.png" alt="Твітер"></a>
-                <a href="https://www.tiktok.com/@navi_gg" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/tiktok.png" alt="Тік-ток"></a>
-                <a href="https://www.youtube.com/user/navicsgo" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/youtube.png" alt="Ютуб"></a>
-                <a href="https://www.facebook.com/NatusVincere" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/facebook.png" alt="Фейсбук"></a>
-                <a href="https://steamcommunity.com/groups/Natus-Vincere" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/steam.png" alt="Стім"></a>
-                <a href="https://discord.com/invite/navination" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/discord.png" alt="Діскорд"></a> <br><br>
+                <div id="rightblock"></div>
             </div>
-        </footer>
-        
+            <footer>
+                <h3>Офіційні сторінки</h3>
+                <div>
+                    <a href="https://www.instagram.com/natus_vincere_official" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/instagram.png" alt="Інстаграм"></a>
+                    <a href="https://t.me/natus_vincere_official" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/telegram.png" alt="Телеграм"></a>
+                    <a href="https://twitter.com/natusvincere" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/twitter.png" alt="Твітер"></a>
+                    <a href="https://www.tiktok.com/@navi_gg" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/tiktok.png" alt="Тік-ток"></a>
+                    <a href="https://www.youtube.com/user/navicsgo" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/youtube.png" alt="Ютуб"></a>
+                    <a href="https://www.facebook.com/NatusVincere" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/facebook.png" alt="Фейсбук"></a>
+                    <a href="https://steamcommunity.com/groups/Natus-Vincere" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/steam.png" alt="Стім"></a>
+                    <a href="https://discord.com/invite/navination" target="_blank"><img height="62" width="62" hspace="5px" src="media/social-media/discord.png" alt="Діскорд"></a> <br><br>
+                    <a href="https://navi.gg/ua" class="button" target="_blank">Офіційний сайт NAVI</a>
+                </div>
+            </footer>
+        </div>
     </body>
 
 </html>
