@@ -11,6 +11,19 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
+        <script type="text/javascript">
+            var n1 = window.prompt("Введіть своє ім'я.", "Наприклад - Степан");
+            var n2 = window.prompt("Введіть свій нікнейм.", "Наприклад - Veizzie");
+            var n3 = window.prompt("Введіть своє прізвище.", "Наприклад - Петренко");
+            if (n1 == null || n2 == null || n3 == null) {
+                document.write("Дія була відмінена");
+            } else {
+                document.write("Вітаю " + n1 + " «" + n2 + "» " + n3 + "! Радий Вас бачити!");
+            }
+        </script>        
+        <noscript>
+            <p>Ваш браузер не підтримує JavaScript</p>
+        </noscript>
         <div class="container">
             <header id="top">
                 <h1>NAVI Team</h1>
