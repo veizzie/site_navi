@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перегляд даних</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Дякуємо Вам!</h2>
+    <h3>Отримані дані</h3>
+    <div id="dataDisplay"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var formData = localStorage.getItem('userFormData');
+            if (formData) {
+                formData = JSON.parse(formData);
+                var displayDiv = document.getElementById('dataDisplay');
+                displayDiv.innerHTML = `
+                    <p><strong>Ім'я:</strong> ${formData.firstName}</p>
+                    <p><strong>Прізвище:</strong> ${formData.lastName}</p>
+                    <p><strong>Вік:</strong> ${formData.age}</p>
+                    <p><strong>Стать:</strong> ${formData.gender}</p>
+                    <p><strong>Ігри:</strong> ${formData.games.join(', ')}</p>
+                `;
+            } else {
+                document.getElementById('dataDisplay').innerHTML = '<p>Даних не знайдено.</p>';
+            }
+        });
+    </script>
+    <a href="teams.html">Повернутись назад</a>
+</body>
+</html>

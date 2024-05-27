@@ -481,6 +481,58 @@
                             </ol>
                         </div>
                     </div>
+                    <form id="userForm">
+                        <h2>Введіть дані</h2>
+                        <h3>Ми хочемо дізнатись якій аудиторії цікавий наш сайт. Ви можете поділитись цією інформацією з нами</h3>
+                        
+                        <label for="firstName">Ім'я:</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Введіть ваше ім'я" required>
+                        
+                        <label for="lastName">Прізвище:</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Введіть ваше прізвище" required>
+                        
+                        <label for="age">Вік:</label>
+                        <input type="number" id="age" name="age" placeholder="Введіть ваш вік" required>
+                        
+                        <div class="radio-group">
+                            <label>Стать:</label>
+                            <label><input type="radio" name="gender" value="male" required> Чоловіча</label>
+                            <label><input type="radio" name="gender" value="female"> Жіноча</label>
+                        </div>
+                        
+                        <div class="checkbox-group">
+                            <label>Ігри, які можуть цікавити:</label>
+                            <label><input type="checkbox" name="games" value="CS2"> CS2</label>
+                            <label><input type="checkbox" name="games" value="Dota 2"> Dota 2</label>
+                            <label><input type="checkbox" name="games" value="PUBG"> PUBG</label>
+                            <label><input type="checkbox" name="games" value="Valorant"> Valorant</label>
+                        </div><br>
+                        
+                        <button type="submit">Відправити</button>
+                    </form>
+                    <script>
+                        document.getElementById('userForm').addEventListener('submit', function(event) {
+                            event.preventDefault(); // Запобігає звичайній поведінці форми
+                
+                            var firstName = document.getElementById('firstName').value;
+                            var lastName = document.getElementById('lastName').value;
+                            var age = document.getElementById('age').value;
+                            var gender = document.querySelector('input[name="gender"]:checked').value;
+                            var games = Array.from(document.querySelectorAll('input[name="games"]:checked')).map(checkbox => checkbox.value);
+                
+                            var formData = {
+                                firstName: firstName,
+                                lastName: lastName,
+                                age: age,
+                                gender: gender,
+                                games: games
+                            };
+                
+                            localStorage.setItem('userFormData', JSON.stringify(formData));
+                
+                            window.location.href = 'view-data.html'; // Перенаправлення на сторінку перегляду даних
+                        });
+                    </script>
                 </div>
                 <div id="rightblock"></div>
             </div>
