@@ -118,6 +118,13 @@
                                     </ul>
                                 </li>
                             </ol>
+                            <script src="gpn.js"></script>
+                            <form>
+                                <h4>Хочеш побачити різницю твоїх годин в CS2 і iM?</h4>
+                                Введіть кількість ваших годин в CS2: <input type="number" id="yourhours" required>
+                                <input type="button" value="Порахувати різницю" onclick="rez()">
+                                <div id="textrez">Різниця годин: </div>
+                            </form>
                         </div>
                     </div>
 
@@ -472,11 +479,8 @@
                                     </ul>
                                 </li>
                             </ol>
-                            <button onclick="calculateTrophies()">Підрахувати кількість виграних трофеїв всіма командами за 2 роки</button>
-                            <p id="result"></p>
                         </div>
                     </div>
-                    <script src="gpn.js"></script>
                 </div>
                 <div id="rightblock"></div>
             </div>
