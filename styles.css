@@ -207,3 +207,7 @@ iframe{
  .copyright{
     font-size: 8pt;
  }
+
+ .error {
+    background-color: #ffcccc;
+}

@@ -514,23 +514,62 @@
                         document.getElementById('userForm').addEventListener('submit', function(event) {
                             event.preventDefault(); // Запобігає звичайній поведінці форми
                 
-                            var firstName = document.getElementById('firstName').value;
-                            var lastName = document.getElementById('lastName').value;
-                            var age = document.getElementById('age').value;
-                            var gender = document.querySelector('input[name="gender"]:checked').value;
+                            var isValid = true;
+                
+                            var firstName = document.getElementById('firstName');
+                            var lastName = document.getElementById('lastName');
+                            var age = document.getElementById('age');
+                            var gender = document.querySelector('input[name="gender"]:checked');
                             var games = Array.from(document.querySelectorAll('input[name="games"]:checked')).map(checkbox => checkbox.value);
                 
-                            var formData = {
-                                firstName: firstName,
-                                lastName: lastName,
-                                age: age,
-                                gender: gender,
-                                games: games
-                            };
+                            // Очищення попередніх помилок
+                            firstName.classList.remove('error');
+                            lastName.classList.remove('error');
+                            age.classList.remove('error');
+                            document.querySelectorAll('input[name="gender"]').forEach(function(radio) {
+                                radio.classList.remove('error');
+                            });
                 
-                            localStorage.setItem('userFormData', JSON.stringify(formData));
+                            // Перевірка імені
+                            if (!firstName.value.trim()) {
+                                firstName.classList.add('error');
+                                isValid = false;
+                            }
                 
-                            window.location.href = 'view-data.html'; // Перенаправлення на сторінку перегляду даних
+                            // Перевірка прізвища
+                            if (!lastName.value.trim()) {
+                                lastName.classList.add('error');
+                                isValid = false;
+                            }
+                
+                            // Перевірка віку
+                            var ageValue = parseInt(age.value);
+                            if (isNaN(ageValue) || ageValue <= 0 || ageValue > 100) {
+                                age.classList.add('error');
+                                isValid = false;
+                            }
+                
+                            // Перевірка статі
+                            if (!gender) {
+                                document.querySelectorAll('input[name="gender"]').forEach(function(radio) {
+                                    radio.classList.add('error');
+                                });
+                                isValid = false;
+                            }
+                
+                            if (isValid) {
+                                var formData = {
+                                    firstName: firstName.value,
+                                    lastName: lastName.value,
+                                    age: ageValue,
+                                    gender: gender.value,
+                                    games: games
+                                };
+                
+                                localStorage.setItem('userFormData', JSON.stringify(formData));
+                
+                                window.location.href = 'view-data.html'; // Перенаправлення на сторінку перегляду даних
+                            }
                         });
                     </script>
                 </div>

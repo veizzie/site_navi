@@ -22,12 +22,15 @@
             if (formData) {
                 formData = JSON.parse(formData);
                 var displayDiv = document.getElementById('dataDisplay');
+                var gamesText = formData.games.length > 0 
+                    ? formData.games.join(', ') 
+                    : 'Нам прикро що вас не зацікавила жодна гра (Або ви забули їх вказати)';
                 displayDiv.innerHTML = `
                     <p><strong>Ім'я:</strong> ${formData.firstName}</p>
                     <p><strong>Прізвище:</strong> ${formData.lastName}</p>
                     <p><strong>Вік:</strong> ${formData.age}</p>
                     <p><strong>Стать:</strong> ${formData.gender}</p>
-                    <p><strong>Ігри:</strong> ${formData.games.join(', ')}</p>
+                    <p><strong>Ігри:</strong> ${gamesText}</p>
                 `;
             } else {
                 document.getElementById('dataDisplay').innerHTML = '<p>Даних не знайдено.</p>';
